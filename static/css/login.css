@@ -1,0 +1,64 @@
+*{
+    color: azure; 
+    font-family: 'Indie Flower', cursive;
+}
+body{
+    background-color: hsl(0, 0%, 10%);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#login-form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #419D78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    font-size: 70px;
+}
+#play{
+    color: white;
+    margin: 30px;
+    width: 75px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    box-shadow:  12px 12px 25px #0a0a0a,
+                -12px -12px 25px #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#input-text{
+    color: black;
+}
+#error{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    user-select: none;
+}

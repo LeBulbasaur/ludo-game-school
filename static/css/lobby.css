@@ -1,0 +1,199 @@
+body{
+    user-select: none;
+    background-color: hsl(0, 0%, 10%);
+    margin: 0;
+    color: azure;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Indie Flower', cursive, monospace;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    user-select: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+#welcome-header{
+    margin-left: 20px;
+    display: block;
+}
+#sort{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    font-size: 25px;
+}
+#players-ready{
+    display: flex;
+}
+#queue {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#start-switch{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#switch{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background: gray;
+}
+#circle{
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin-left: 0;
+}
+#start{
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 25px;
+    background: #1a1a1a;
+    box-shadow:  10px 10px 23px #101010,
+                -10px -10px 23px #242424;
+    fill: red;
+}
+#start-game{
+    margin-top: 10px;
+}
+#board-sector{
+    display: none;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    width: 600px;
+    height: 600px;
+    background-image: url("../pics/ludo_board.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+#winner{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+#roll-die-container{
+    position: fixed;
+    left: 2vw;
+    bottom: 2vh;
+    width: 75px;
+    height: 75px;
+}
+#roll-die-bt{
+    fill: red;
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    box-shadow:  12px 12px 25px #0a0a0a,
+                -12px -12px 25px #2a2a2a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#roll-die{
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    box-shadow:  12px 12px 25px #0a0a0a,
+                -12px -12px 25px #2a2a2a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#value-die{
+    width: 75px;
+    height: 75px;
+    display: none;
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+}
+#timer-div{
+    background-color:#419D78;
+    color:#EFD0CA;
+    font-size:20px;
+    text-align:center;
+    display: none;
+}
+#haram{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+#showcase{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.field{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+.pawn{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: auto;
+}
+.player {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    margin: 50px;
+    border-radius: 25%;
+    box-shadow: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

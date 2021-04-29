@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/lobby.css">
+
+</head>
+
+<body>
+    <h1 id="welcome-header">Welcome</h1>
+
+    <div id="sort">
+        <div>Players ready:</div>
+        <div id="players-ready">
+            <div id="is-ready">0</div>
+            <div>/</div>
+            <div id="players-amount">0</div>
+        </div>
+    </div>
+
+    <div id="timer-div">Time left = <span id="timer"></span></div>
+
+    <div id="queue">
+        <div id="player-one" class="player"></div>
+        <div id="player-two" class="player"></div>
+        <div id="player-three" class="player"></div>
+        <div id="player-four" class="player"></div>
+        <button id="start">
+            <svg id="start-game" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <path
+                    d="M14 12h-4v-12h4v12zm4.213-10.246l-1.213 1.599c2.984 1.732 5 4.955 5 8.647 0 5.514-4.486 10-10 10s-10-4.486-10-10c0-3.692 2.016-6.915 5-8.647l-1.213-1.599c-3.465 2.103-5.787 5.897-5.787 10.246 0 6.627 5.373 12 12 12s12-5.373 12-12c0-4.349-2.322-8.143-5.787-10.246z" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="start-switch">
+        <div id="switch">
+            <div id="circle"></div>
+        </div>
+    </div>
+    <div id="roll-die-bt">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path
+                d="M16 16v4l8-8-8-8v4h-8.929c-9.059 0-7.134 9.521-6.334 11.418.788-2.445 2.464-3.418 5.371-3.418h9.892z" />
+        </svg>
+    </div>
+
+    <div id="board-sector">
+        <div id="board"></div>
+        <div id="haram"></div>
+        <div id="winner">The winner is:<span id="winner-text"></span>
+        </div>
+    </div>
+    <div id="roll-die-container">
+        <div id="roll-die">roll</div>
+        <div id="value-die"></div>
+    </div>
+    <footer>
+        <p>Copyright © 2021 Antoni Zaremba</p>
+    </footer>
+    <script src="/script/lobby.js" type="module" defer></script>
+    <script src="/script/slideButton.js" type="module"></script>
+</body>
+
+</html>
