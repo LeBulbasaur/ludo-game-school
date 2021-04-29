@@ -34,7 +34,8 @@ class Player {
 
 const fetchSessions = async (sessionData) => {
     const response = await fetch("http://localhost:3000/sessions", {
-        method: "GET"
+        method: "GET",
+        mode: 'no-cors'
     });
     const data = await response.json();
     const sessionArray = Object.values(data);

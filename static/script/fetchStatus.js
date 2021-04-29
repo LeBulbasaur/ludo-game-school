@@ -1,6 +1,7 @@
 function fetchStatus(data) {
     fetch("/status", {
         method: "POST",
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
@@ -9,6 +10,7 @@ function fetchStatus(data) {
 function fetchMove(data) {
     fetch("/changemove", {
         method: "POST",
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
@@ -17,6 +19,7 @@ function fetchMove(data) {
 function fetchCancel(data) {
     fetch("/cancelrolling", {
         method: "POST",
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
@@ -25,6 +28,7 @@ function fetchCancel(data) {
 function fetchMovePawn(data) {
     fetch("/movepawn", {
         method: "POST",
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
     })
@@ -33,6 +37,7 @@ function fetchMovePawn(data) {
 function fetchEnd() {
     fetch("/", {
         method: "GET",
+        mode: 'no-cors',
         headers: { "Content-type": "text/html; charset=UTF-8" }
     })
         .catch(err => console.log(err));
