@@ -162,7 +162,7 @@ const getSession = () => {
                 window.location.href = "/";
             }, 2000)
         }
-        if (b == 1) {
+        if (b == 4) {
             clearInterval(vars.bigInterval)
             winnerDiv.style.display = "flex"
             winnerSpan.innerText = "Blue"
