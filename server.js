@@ -41,8 +41,6 @@ app.get("/sessions", (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
-            res.setHeader("Access-Control-Allow-Headers", "Authorization, Cache-Control, Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
             res.send(JSON.stringify(docs));
         }
     })
